@@ -40,7 +40,7 @@ public class WordPuzzleTest{
   @Test
   public void runWordPuzzle_replaceVowelsInSentenceWithDashes_String() {
   WordPuzzle testWordPuzzle = new WordPuzzle();
-  String expected = "Th- -nly -mp-r-r -s th- -mp-r-r -f -c- cr--m.";
+  String expected = "Th- -nl- -mp-r-r -s th- -mp-r-r -f -c- cr--m.";
   assertEquals(expected, testWordPuzzle.runWordPuzzle("The only emperor is the emperor of ice cream."));
   }
 
