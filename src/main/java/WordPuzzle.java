@@ -40,17 +40,17 @@ public class WordPuzzle {
             }
           }
         }
-        if (!vowelBeforeY && !vowelAfterY) { // If there is no vowel before or after y, then y is a vowel.
+        if (!vowelBeforeY && !vowelAfterY) { // If there is no vowel before or after y, then y is a vowel, so replace it with a dash.
           results += "-";
         }
-      } else {
+      } else { // If the letter is not y, check if it is a vowel.
         for (char vowel : vowels) {
-          if (letter == vowel) {
+          if (letter == vowel) { // If the letter is a vowel, replace it with a dash.
             results += "-";
             isVowel = true;
           }
         }
-        if (!isVowel) {
+        if (!isVowel) { // If the letter is not a vowel, add it to the results string.
           results += letter;
         }
         yIndex++; // Allows the loop to check the location of y in the array so that it can check before and after y for vowels.
