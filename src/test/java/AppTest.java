@@ -28,7 +28,7 @@ public void printsWordPuzzle() {
   goTo("http://localhost:4567");
   fill("#userString").with("katydid");
   submit(".btn");
-  assertThat(pageSource()).contains("kat-d-d");
+  assertThat(pageSource()).contains("k-t-d-d");
 }
 
 }
