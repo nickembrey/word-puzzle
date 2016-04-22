@@ -20,4 +20,12 @@ public class WordPuzzleTest{
   assertEquals(expected, testWordPuzzle.runWordPuzzle("aeiou"));
   }
 
+  // Test passes a string of all five vowels into runWordPuzzle and expects it to return a string of five dashes.
+  @Test
+  public void runWordPuzzle_replaceAllVowelsInWordWithDashes_String() {
+  WordPuzzle testWordPuzzle = new WordPuzzle();
+  String expected = "-sp-rt-m-";
+  assertEquals(expected, testWordPuzzle.runWordPuzzle("aspartame"));
+  }
+
 }
