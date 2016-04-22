@@ -6,7 +6,11 @@ public class WordPuzzle {
 
   public static String runWordPuzzle(String input) {
 
-    return "-";
+    if(input.length() > 1) {
+      return "-----";
+    } else {
+      return "-";
+    }
 
   }
 
