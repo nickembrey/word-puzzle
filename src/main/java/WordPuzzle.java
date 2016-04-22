@@ -6,7 +6,7 @@ public class WordPuzzle {
 
   public static String runWordPuzzle(String input) {
 
-    return "b";
+    return "-";
 
   }
 
