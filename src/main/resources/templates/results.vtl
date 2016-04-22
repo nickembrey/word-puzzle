@@ -1,2 +1,10 @@
 <h1>Your word puzzle:</h1>
 <h3>$puzzle</h3>
+
+<form action='/guess' method='get'>
+  <div class="form-group">
+    <label for="userGuess">Enter a word or phrase.</label>
+    <input id="userGuess" name="userGuess" class="form-control" type="text">
+  </div>
+  <button type="submit" class="btn btn-info">Generate puzzle</button>
+</form>
