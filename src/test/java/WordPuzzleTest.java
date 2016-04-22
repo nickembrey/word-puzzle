@@ -44,4 +44,12 @@ public class WordPuzzleTest{
   assertEquals(expected, testWordPuzzle.runWordPuzzle("The only emperor is the emperor of ice cream."));
   }
 
+  // Test passes a word with y functioning as a vowel into runWordPuzzle and expects it to return the sentence with a dash replacing the y.
+  @Test
+  public void runWordPuzzle_replaceYAsVowelWithDash_String() {
+  WordPuzzle testWordPuzzle = new WordPuzzle();
+  String expected = "chr-s-nth-m-m";
+  assertEquals(expected, testWordPuzzle.runWordPuzzle("chrysanthemum"));
+  }
+
 }
