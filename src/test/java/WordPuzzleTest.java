@@ -36,4 +36,12 @@ public class WordPuzzleTest{
   assertEquals(expected, testWordPuzzle.runWordPuzzle("cOnViViAlItY"));
   }
 
+  // Test passes a sentence into runWordPuzzle and expects it to return the sentence with dashes replacing the vowels.
+  @Test
+  public void runWordPuzzle_replaceVowelsInSentenceWithDashes_String() {
+  WordPuzzle testWordPuzzle = new WordPuzzle();
+  String expected = "Th- -nly -mp-r-r -s th- -mp-r-r -f -c- cr--m.";
+  assertEquals(expected, testWordPuzzle.runWordPuzzle("The only emperor is the emperor of ice cream."));
+  }
+
 }

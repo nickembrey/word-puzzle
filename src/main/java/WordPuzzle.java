@@ -7,7 +7,7 @@ public class WordPuzzle {
   public static String runWordPuzzle(String input) {
 
     char[] inputArray = input.toCharArray();
-    char[] vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+    char[] vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U',' '};
     String results = new String();
 
     for(char letter : inputArray) {
