@@ -13,7 +13,6 @@ _When the user inputs a string into the main page and pushes the button, the app
 * _First, ensure that you have the latest version of the Oracle JRE needed to run Java._
 * _Next, ensure that you have the dependency manager gradle installed on your computer._
 * _Download the repository._
-* _Create a build.gradle file. A template for the build can be found at the text tab at https://www.learnhowtoprogram.com/java/behavior-driven-development-with-java/integration-testing-with-fluentlenium _
 * _Finally, navigate to the repository from your terminal and execute "gradle run"._
 * _Navigate to localhost:4567_
 
