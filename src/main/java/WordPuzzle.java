@@ -15,34 +15,34 @@ public class WordPuzzle {
       boolean isVowel = false;
       boolean vowelBeforeY = false;
       boolean vowelAfterY = false;
-      if(letter == '$') {
-        // if(yIndex == 0) {
-        //   for(char vowel in vowels) {
-        //     if(inputArray[yIndex + 1] == vowel) {
-        //       vowelAfterY = true;
-        //     }
-        //   }
-        // } else if(yIndex == inputArray.length - 1) {
-        //   for(char vowel in vowels) {
-        //     if(inputArray[yIndex - 1] == vowel) {
-        //       vowelBeforeY = true;
-        //     }
-        //   }
-        // } else {
-        //   for(char vowel in vowels) {
-        //     if(inputArray[yIndex + 1] == vowel) {
-        //       vowelAfterY = true;
-        //     }
-        //   }
-        //   for(char vowel in vowels) {
-        //     if(inputArray[yIndex - 1] == vowel) {
-        //       vowelBeforeY = true;
-        //     }
-        //   }
-        // }
-        // if (!vowelBeforeY && !vowelAfterY) {
-        //   isVowel = true;
-        // }
+      if(letter == 'y') {
+        if(yIndex == 0) {
+          for(char vowel : vowels) {
+            if(inputArray[yIndex + 1] == vowel) {
+              vowelAfterY = true;
+            }
+          }
+        } else if(yIndex == inputArray.length - 1) {
+          for(char vowel : vowels) {
+            if(inputArray[yIndex - 1] == vowel) {
+              vowelBeforeY = true;
+            }
+          }
+        } else {
+          for(char vowel : vowels) {
+            if(inputArray[yIndex + 1] == vowel) {
+              vowelAfterY = true;
+            }
+          }
+          for(char vowel : vowels) {
+            if(inputArray[yIndex - 1] == vowel) {
+              vowelBeforeY = true;
+            }
+          }
+        }
+        if (!vowelBeforeY && !vowelAfterY) {
+          results += "-";
+        }
       } else {
         for (char vowel : vowels) {
           if (letter == vowel) {
