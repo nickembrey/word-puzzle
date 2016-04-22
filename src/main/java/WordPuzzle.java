@@ -42,6 +42,8 @@ public class WordPuzzle {
         }
         if (!vowelBeforeY && !vowelAfterY) { // If there is no vowel before or after y, then y is a vowel, so replace it with a dash.
           results += "-";
+        } else {
+          results += letter; // If there is a vowel before or after y, then y is not a vowel, so add it to the results string.
         }
       } else { // If the letter is not y, check if it is a vowel.
         for (char vowel : vowels) {
