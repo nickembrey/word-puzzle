@@ -16,19 +16,19 @@ public class WordPuzzle {
       boolean vowelBeforeY = false;
       boolean vowelAfterY = false;
       if(letter == 'y') {
-        if(yIndex == 0) {
+        if(yIndex == 0) { // If y is at the start of the word, only check to see if the letter after is a vowel.
           for(char vowel : vowels) {
             if(inputArray[yIndex + 1] == vowel) {
               vowelAfterY = true;
             }
           }
-        } else if(yIndex == inputArray.length - 1) {
+        } else if(yIndex == inputArray.length - 1) { // If y is at the end of the word, only check to see if the letter before is a vowel.
           for(char vowel : vowels) {
             if(inputArray[yIndex - 1] == vowel) {
               vowelBeforeY = true;
             }
           }
-        } else {
+        } else { // If y is not at the start or end of the word, check the letter before and the letter after to see if they are vowels.
           for(char vowel : vowels) {
             if(inputArray[yIndex + 1] == vowel) {
               vowelAfterY = true;
@@ -40,7 +40,7 @@ public class WordPuzzle {
             }
           }
         }
-        if (!vowelBeforeY && !vowelAfterY) {
+        if (!vowelBeforeY && !vowelAfterY) { // If there is no vowel before or after y, then y is a vowel.
           results += "-";
         }
       } else {
@@ -53,7 +53,7 @@ public class WordPuzzle {
         if (!isVowel) {
           results += letter;
         }
-        yIndex++;
+        yIndex++; // Allows the loop to check the location of y in the array so that it can check before and after y for vowels.
       }
     }
 

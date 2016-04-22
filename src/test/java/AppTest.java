@@ -24,11 +24,11 @@ public class AppTest extends FluentTest {
   }
 
   @Test
-public void printsWordPuzzle() {
-  goTo("http://localhost:4567");
-  fill("#userString").with("katydid");
-  submit(".btn");
-  assertThat(pageSource()).contains("k-t-d-d");
-}
+  public void printsWordPuzzle() {
+    goTo("http://localhost:4567");
+    fill("#userString").with("katydid");
+    submit(".btn");
+    assertThat(pageSource()).contains("k-t-d-d");
+  }
 
 }
